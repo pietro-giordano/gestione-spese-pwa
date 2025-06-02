@@ -45,6 +45,7 @@ class UserSetting extends Model
         ];
     }
 
+    // RELATIONS
     /**
      * Get the user that owns the settings.
      */
