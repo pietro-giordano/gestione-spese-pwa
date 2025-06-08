@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use App\Enums\Accounts\Type;
+use App\Enums\Accounts\Type as AccountType;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -22,7 +22,7 @@ class Account extends Model
     ];
 
     protected $casts = [
-        'type' => Type::class,
+        'type' => AccountType::class,
         'balance' => 'decimal:2',
         'is_active' => 'boolean',
     ];
